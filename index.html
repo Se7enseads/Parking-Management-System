@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Moringa school has a parking but it is not well managed so in using this Parking Management System (PMS) the parking space will be better managed. ">
+
+  <title>Moringa Parking System</title>
+
+  <!-- CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- Main -->
+  <div class="containers">
+
+    <!-- Navbar -->
+    <div class="row">
+      <div class=" col-12 navbar">
+        <div class="navlist">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#form">Form</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="row">
+      <div class="vh-100">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/parking1.jpg" class="d-block w-100 " alt="Basement Parking One">
+            </div>
+            <div class="carousel-item">
+              <img src="image/parking2.jpg" class="d-block w-100" alt="Basement Parking Two">
+            </div>
+            <div class="carousel-item">
+              <img src="image/parking3.jpg" class="d-block w-100 " alt="Basement Parking Three">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- About us-->
+    <div class="row">
+      <div class="vh-100">
+        <div class="about" id="about">About Us</div>
+        <section class="section">
+          <div class="paras">
+            <p class="sectiontag">Searching for a Parking Lot End of your Search is Here</p>
+            <p class="sectionsubtag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis corrupti ab
+              numquam!
+              Nostrum
+              impedit minima at tenetur magnam, minus ad! Id doloribus voluptatem, dolore aut possimus dignissimos
+              voluptatum
+              neque cumque.
+              Provident repudiandae voluptatum, sint quasi quia laborum nulla voluptatem culpa numquam aperiam dolorum,
+              id
+              fuga
+              sequi similique exercitationem officia sit veritatis? Laboriosam commodi omnis delectus optio cupiditate
+              ad!
+              Perspiciatis, molestias.
+            </p>
+          </div>
+          <div class="thumbnail"><img src="./image/parking3.jpg" class="imgfluid" alt="Parking">
+          </div>
+        </section>
+        <section class="section sectionleft">
+          <div class="paragraph">
+            <p class="sectiontag">Guarantee of High Security Of Your Vehicle</p>
+            <p class="sectionsubtag">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis corrupti ab
+              numquam!
+              Nostrum
+              impedit minima at tenetur magnam, minus ad! Id doloribus voluptatem, dolore aut possimus dignissimos
+              voluptatum
+              neque cumque.
+              Provident repudiandae voluptatum, sint quasi quia laborum nulla voluptatem culpa numquam aperiam dolorum,
+              id
+              fuga
+              sequi similique exercitationem officia sit veritatis? Laboriosam commodi omnis delectus optio cupiditate
+              ad!
+              Perspiciatis, molestias.
+            </p>
+          </div>
+          <div class="thumbnail"><img src="./image/cctv.jpg" class="imgfluid" alt="logo">
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Form  -->
+    <div class="row">
+      <div class="col-12" id="form">
+        <div class="form-container mt-5">
+          <form class="w-50 mx-auto" id="entryForm">
+            <h5 class="text-center">Add Car to the Parking Lot</h5>
+            <div class="form-group">
+              <label for="owner">Owner:</label>
+              <input type="text" class="form-control rounded-3 shadow-sm" id="owner" placeholder="Owner">
+            </div>
+            <div class="form-group">
+              <label for="model">Model/Make:</label>
+              <input type="text" class="form-control rounded-3 shadow-sm" id="model"
+                placeholder="Range-Rover, Land-Rover">
+            </div>
+            <div class="form-group">
+              <label for="licensePlate">Number Plate:</label>
+              <input type="text" class="form-control rounded-3 shadow-sm" id="numberPlate" placeholder="KDA-001A">
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <label for="entryDate">Entry Date:</label>
+                <input type="date" class="form-control rounded-3 shadow-sm" id="entryDate">
+              </div>
+              <div class="col-6">
+                <label for="exitDate">Exit Date:</label>
+                <input type="date" class="form-control rounded-3 shadow-sm" id="exitDate">
+              </div>
+            </div>
+            <button type="submit" class="btn mx-auto d-block mt-5 rounded-5 shadow btn btn-success" id="btnOne">Add
+              Car</button>
+          </form>
+        </div>
+        <div class="table-container mt-5 mb-5 w-75 mx-auto">
+          <h5 class="text-center mb-3">List of Cars in Parking Lot</h5>
+          <input type="text" class="w-100 mb-3 rounded-3" id="searchInput" placeholder="Search...">
+          <table class="table table-striped shadow" id="parkingTable">
+            <thead class="text-dark " id="tableHead">
+              <tr>
+                <th scope="col">Owner</th>
+                <th scope="col">Car</th>
+                <th scope="col">Number Plate</th>
+                <th scope="col">Entry Date</th>
+                <th scope="col">Exit Date</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+
+  <script src="./js/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
