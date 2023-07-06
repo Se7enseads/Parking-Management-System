@@ -2,11 +2,6 @@
   margin: 0;
   padding: 0;
 }
-.body {
-  scroll-behavior: smooth;
-  scroll-snap-type: mandatory;
-  scrollbar-width: thin;
-}
 
 /* CSS code for container */
 
@@ -51,9 +46,8 @@
 /* CSS code for the carousel */
 
 .carousel-inner {
-  height: 91vh;
+  height: 91.2vh;
   width: 98.8vw;
-  object-fit: contain;
 }
 
 .carousel-inner img {

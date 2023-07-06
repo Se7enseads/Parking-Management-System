@@ -32,7 +32,7 @@ const UI = {
       <td>${entry.numberPlate}</td>
       <td>${entry.entryDate}</td>
       <td>${entry.exitDate}</td>
-      <td><button class="btn btn-danger delete" data-number-plate="${entry.owner}">Delete</button></td>
+      <td><button class="btn btn-danger delete" data-id="${entry.id}">Delete</button></td>
     `;
     tableBody.appendChild(row);
   },
@@ -49,8 +49,8 @@ const UI = {
             "success"
           );
         })
-        .catch((error) => {
-          UI.showAlert("Failed to delete entry from the API", error);
+        .catch(() => {
+          UI.showAlert("Failed to delete entry from the API", "danger");
         });
     }
   },
@@ -58,7 +58,7 @@ const UI = {
   // Show an alert message in the UI
   showAlert: (message, className) => {
     const div = document.createElement("div");
-    div.className = `alert alert-${className} w-50 mx-auto`;
+    div.className = `alert alert-${className} fade show w-50 mx-auto`;
     div.appendChild(document.createTextNode(message));
 
     // Find the container where the form is located
@@ -89,7 +89,11 @@ const UI = {
       return false;
     }
     if (exitDate < entryDate) {
-      UI.showAlert("Exit Date cannot be lower than Entry Date", "danger");
+      UI.showAlert("Exit Date cannot be lower than Entry Date", "warning");
+      return false;
+    }
+    if (numberPlate.length !== 8) {
+      UI.showAlert("The Number Plate has eight Characters ", "warning");
       return false;
     }
 
@@ -124,13 +128,13 @@ const API = {
     }
   },
 
-  deleteEntry: async (owner) => {
-    const response = await fetch(`http://localhost:3000/entries/${owner}`, {
+  deleteEntry: async (id) => {
+    const response = await fetch(`http://localhost:3000/entries/${id}`, {
       method: "DELETE",
     });
 
     if (!response.ok) {
-      throw new Error("Failed to delete entry from the API");
+      throw new Error("Failed to delete entry from the API", "danger");
     }
   },
 };
@@ -149,6 +153,7 @@ document.querySelector("#entryForm").addEventListener("submit", (e) => {
   const entryDate = document.querySelector("#entryDate").value;
   const exitDate = document.querySelector("#exitDate").value;
 
+  // Validated if all inputs are filled
   if (UI.validateInputs() === false) {
     return;
   }
@@ -158,6 +163,7 @@ document.querySelector("#entryForm").addEventListener("submit", (e) => {
   // Add the entry to the UI table
   UI.addEntryToTable(entry);
 
+  // Add entry to the database
   API.addEntry(entry)
     .then(() => {
       UI.showAlert("Car successfully added to the parking lot", "success");
