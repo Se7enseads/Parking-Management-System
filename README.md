@@ -2,6 +2,14 @@
 
 The Parking Lot System is a web application that allows the gateman to manage and track entries in a parking lot. It provides functionality to add new entries, view existing entries, and delete entries from the system.
 
+## Table of contents
+
+- [Features](#features)
+- [Technologies](#technologies-used)
+- [Getting Started](#🚀-getting-started)
+- [Usage](#usage)
+- [License](#📝-license)
+
 ## Features
 
 - Add new entries to the parking lot system by providing owner details, vehicle model, number plate, entry date, and exit date.
@@ -10,18 +18,16 @@ The Parking Lot System is a web application that allows the gateman to manage an
 
 ## Technologies Used
 
-- HTML/CSS: Front-end structure and styling.
-- JavaScript: Programming language for client-side logic and interaction.
-- Bootstrap: CSS framework for responsive design and pre-styled components.
-<!-- - nPoint (API Mocking Service): Simulates API requests and responses for testing and development. -->
+- **HTML/CSS:** Front-end structure and styling.
+- **JavaScript:** Programming language for client-side logic and interaction.
+- **Bootstrap:** CSS framework for responsive design and pre-styled components.
 
-# 🚀 Getting started
+# 🚀 Getting Started
 
 To run the Parking Lot System locally on your machine, follow these steps:
 
 ## GIT
-
-To clone this repo ensure you have [Git](https://git-scm.com/) installed onto your local machine.
+To get the repo locally you need to clone this repo. Ensure you have [Git](https://git-scm.com/) installed onto your local machine.
 
 To check if git is already installed, run this command in your terminal:
 
@@ -32,14 +38,14 @@ git --version
 ### Using https
 
 ```bash
-git clone https://github.com/Se7enseads/Code-challenge-3.git
+git clone https://github.com/Se7enseads/Parking-Management-System.git
 ```
 
 ### Using [SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
 To use ssh your first need to [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo onto your github account then use the ssh provided under the code button.
 
-![SSH image](./resources/image2.png "SSH")
+![SSH IMAGE](./resources/image-1.png "SSH")
 
 ```bash
 git@github.com:[Your-username]/[repo]
@@ -49,7 +55,7 @@ For more information about git you can checkout the git [Documentation.](https:/
 
 ## JSON Server
 
-To run this challenge you will need a [Mock API (Application Programming Interface)]() or Mock server to create an APi to fetch data from, in our case Charcters.
+To run this challenge you will need a [Mock API (Application Programming Interface)]() or Mock server to create an APi to fetch data from, in our case Characters.
 
 To start using JSON Server, we need to install it.
 
@@ -87,7 +93,7 @@ When run, you'll see some messaging about how to access our JSON data. By defaul
 
 ![Terminal](./resources/terminal.png)
 
-**For more infomation about JSON Server checkout their [homepage.](https://github.com/typicode/json-server)**
+**For more information about JSON Server checkout their [homepage.](https://github.com/typicode/json-server)**
 
 ## Usage
 
